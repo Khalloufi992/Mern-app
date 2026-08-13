@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: mern-taskpulse-app
+    env: node
+    buildCommand: npm run build
+    startCommand: npm start
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: NODE_ENV
+        value: production
